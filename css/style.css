@@ -1,0 +1,83 @@
+        /* Container for vertical nav */
+        nav {
+        width: 200px;               /* fixed width sidebar */
+        background-color: #6e99af;
+        height: 100vh;     
+        position: fixed;
+        top: 0;
+        left: 0;         /* full viewport height */
+        }
+        /* Remove list styling */
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        /* Links take full width */
+        nav a {
+        display: block;             /* stack links vertically */
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        }
+        /* Hover effect */
+        nav a:hover {
+        background-color: #454676;
+        }
+        /* Active/current page */
+        nav a.active {
+        background-color: #aa047e;
+        font-weight: bold;
+        }
+        main {
+    margin-left: 250px;
+    padding: 30px;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+figure {
+  display: flow-root;
+  margin: 24px 0;
+}
+
+figure img {
+  float: left;
+  margin: 0 16px 12px 0;
+}
+
+figcaption {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Background image */
+body {
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Gallery image hover effect */
+figure img {
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.08);
+}
+main {
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+}
+
+main h1 {
+  color: #183a2b;
+}
+
+main a:hover {
+  color: #aa047e;
+}
